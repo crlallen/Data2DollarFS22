@@ -27,7 +27,7 @@ class GetdataSpider(scrapy.Spider):
     			yield {'Name': unternehmens_name,
     				'Adresse': unternehmens_adresse}
     		# Da der "Naechste Seite" Button im Sichtfeld sein muss, scrollen wir auf der Webseite nach unten
-    		element = self.driver.find_element_by_id('below-content')
+    		element = self.driver.find_element_by_id('footer1')
     		self.driver.execute_script("arguments[0].scrollIntoView(0, document.documentElement.scrollHeight-5);", element)
     		sel = Selector(text=self.driver.page_source)
     		sleep(3)
