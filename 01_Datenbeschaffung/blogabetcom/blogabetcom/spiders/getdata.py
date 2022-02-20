@@ -32,7 +32,7 @@ class GetdataSpider(Spider):
 	                #chrome = webdriver.Chrome(options=chrome_options) 
 
 	                self.driver.get(url)
-	                
+	                self.driver.find_element_by_class_name('btn.btn-success').click() 
 	                try:
 	                    self.driver.find_element_by_id('currentTab').click()
 	                    sleep(3)
