@@ -14,7 +14,7 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 
 api = tweepy.API(auth)
 
-startDate = datetime.datetime(2020, 1, 1, 0, 0, 0)
+startDate = datetime.datetime(2010, 1, 1, 0, 0, 0)
 endDate =   datetime.datetime(2022, 3, 7, 0, 0, 0)
 
 utc=pytz.UTC
